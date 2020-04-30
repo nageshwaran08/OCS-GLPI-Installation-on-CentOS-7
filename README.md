@@ -59,11 +59,11 @@
 1. Download OCS Inventory and run setup
 
     ```
-    OCS_VER=2.4.1 &&
+    OCS_VER=2.7 &&
     cd /var/www/html &&
-    wget https://github.com/OCSInventory-NG/OCSInventory-ocsreports/releases/download/2.4.1/OCSNG_UNIX_SERVER_$OCS_VER.tar.gz &&
-    tar -xzvf OCSNG_UNIX_SERVER_$OCS_VER.tar.gz &&
-    cd OCSNG_UNIX_SERVER_$OCS_VER &&
+    wget https://github.com/nageshwaran08/OCS-GLPI-Installation-on-CentOS-7/blob/master/OCSNG_UNIX_SERVER_2.7.tar.gz &&
+    tar -xzvf OCSNG_UNIX_SERVER_2.7.tar.gz &&
+    cd OCSNG_UNIX_SERVER_2.7 &&
     ./setup.sh
     ```
 
