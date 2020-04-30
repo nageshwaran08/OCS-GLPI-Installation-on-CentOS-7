@@ -225,12 +225,3 @@
 
 http://wiki.ocsinventory-ng.org/index.php?title=Documentation:UnixAgent
 
-## Force Election of Host to do IP Discovery
-
-1. Select host in OCS.
-2. Go to CONFIGURATION > EDIT > NETWORK SCANS > Select network in IP Discover dropdown
-
-*Source:*
-
-*http://tamxuanla.blogspot.my/2016/08/how-to-ocs-inventory-212-on-centos-67.html*
-*https://www.zerostopbits.com/how-to-upgrade-php-5-3-to-php-5-4-on-centos-6-7/*
