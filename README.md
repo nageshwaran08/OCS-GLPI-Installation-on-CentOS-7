@@ -24,8 +24,21 @@
     cpan Apache::DBI
     cpan ModPerl::MM
     cpan Apache2::SOAP
+    cpan Mojolicious::Lite
+    cpan Switch
+    cpan Plack::Handler
+    
+    (or)
+    
+    yum install "perl(XML::Entities)"
+    yum install "perl(Apache::DBI)"
+    yum install "perl(ModPerl::MM)"
+    yum install "perl(Apache2::SOAP)"
+    yum install "perl(Mojolicious::Lite)"
+    yum install "perl(Switch)"
+    yum install "perl(Plack::Handler)"
     ```
-
+    
 1.  Exclude ports 80 for Apache, 3306 for MySQL and 25 for SMTP from iptables
 
     ```
@@ -87,13 +100,14 @@
 1. Run mysql_upgrade
 
     ```
-    mysql_upgrade -uroot -p[password]
+    mysql_upgrade -u root -p[password]
     ```
 
 1. Create OCS user in MySQL and assign privileges for OCSWEB database
     ```
-    mysql -uroot -p[password]
+    mysql -u root -p [password]
     GRANT ALL PRIVILEGES ON `ocsweb` .* TO 'ocs'@'localhost' IDENTIFIED BY 'ocs' WITH GRANT OPTION;
+    FLUSH PRIVILEGES;
     ```
 
 1. Perform initial OCS config then login to OCS 
